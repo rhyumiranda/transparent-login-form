@@ -63,6 +63,40 @@ form{
 }
 
 /* ==========
+Icons Options
+========== */
+
+.other-option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.other-option i{
+  margin: 10px 20px;
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+
+  width: 35px;
+  height: 35px;
+  font-size: 1.2rem;
+
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s;
+  border-radius: 5px;
+}
+
+.other-option i:hover{
+  transform: scale(1.3);
+  color: rgb(196, 213, 255);
+  cursor: pointer;
+}
+
+/* ==========
 Form Grid Division
 ========== */
 
@@ -75,7 +109,6 @@ Form Grid Division
   width: 100%;
   height: 500px;
 
-  gap: 1rem;
 }
 
 .contact-info{
@@ -94,7 +127,7 @@ Contact Info Section
   width: 100%;
   height: 30px;
   background-color: #141831;
-  margin: 0 20px;
+  margin: .5rem 20px;
   display: grid;
   grid-template-columns: 15% 85%;
   border-radius: 5px;
@@ -120,6 +153,8 @@ Contact Info Section
   color: white;
 }
 
+.input-field input:-webkit-autofill, input:-webkit-autofill:hover,  input:-webkit-autofill:focus, textarea:-webkit-autofill, textarea:-webkit-autofill:hover, textarea:-webkit-autofill:focus, select:-webkit-autofill, select:-webkit-autofill:hover, select:-webkit-autofill:focus {     -webkit-background-color:transparent;  transition: background-color 5000s ease-in-out 0s; }
+
 .contact-form button {
   max-width: 250px;
   width: 100%;
@@ -132,15 +167,61 @@ Contact Info Section
   font-size: .8rem;
   line-height: 1;
 
-  color: black;
+  color: white;
+  background-color: #3d46c9;
 
-  background-color: #cfd0df;
+  margin: 20px;
 }
 
 .contact-form button:hover {
   cursor: pointer;
   color: white;
   background-color: #7980d7;
+}
+
+/* ==========
+Texts Content
+========== */
+
+.contact-form p a {
+  font-family: 'Poppings', sans-serif;
+  text-decoration: none;
+  color: white;
+
+  font-size: .6rem;
+  font-weight: 100;
+  text-align: start;
+
+  position: relative;
+  right: 85px;
+  top: 0;
+}
+
+.greeting{
+  margin: 20px 0;
+}
+
+.greeting h1, 
+.greeting p{
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  color: white;
+}
+
+.greeting h1{
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.greeting > p{
+  font-size: .6rem;
+}
+
+.contact-form > p{
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  color: white;
+  font-size: .5rem;
 }
 
 /* ==========

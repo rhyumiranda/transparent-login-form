@@ -5,21 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Transparent Login Form</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script
+    src="https://kit.fontawesome.com/64d58efce2.js"
+    crossorigin="anonymous">
+    </script>
   </head>
   <body>
     <main>
-      <form action="./results.html" method="GET" class="sign-in-form">
-        <div class="contact-form"></div>
-        <div class="contact-info">
-          <div class="email">
-            <label for="">USERNAME</label>
-            <input type="email" required/>
+      <form action="#" method="GET" class="sign-in-form">
+        <div class="contact-info"></div>
+        <div class="contact-form-container">
+          <div class="greetings">
+            <h1></h1>
           </div>
-          <div class="password">
-            <label for="">PASSWORD</label>
-            <input type="password" required/>
+          <div class="contact-form">
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="email" name="email" placeholder="Email" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" name="password" placeholder="Password" required/>
+            </div>
+            <p><a href="#">Forgot password?</a></p>
+            <button>Sign in</button>
           </div>
-          <button>SIGN IN</button>
         </div>
       </form>
     </main>
